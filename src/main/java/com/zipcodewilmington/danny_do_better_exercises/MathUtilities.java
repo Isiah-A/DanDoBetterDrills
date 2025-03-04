@@ -74,7 +74,7 @@ public class MathUtilities {
      * @return difference between `baseValue` and `difference`
      */
     public Long subtract(long baseValue, long difference) {
-        return null;
+        return (long) (baseValue - difference);
     }
 
     /**
@@ -83,7 +83,7 @@ public class MathUtilities {
      * @return difference between `baseValue` and `difference`
      */
     public Short subtract(short baseValue, short difference) {
-        return null;
+        return (short) (baseValue - difference);
     }
 
     /**
