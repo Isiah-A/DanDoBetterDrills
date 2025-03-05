@@ -67,13 +67,15 @@ public class StringUtilities {
             return inputValue.charAt(inputValue.length() / 2);
        }
     }
-//return inputValue.charAt(inputValue.length() / 2 - 1 );
+
         /**
          * @param spaceDelimitedString a string, representative of a sentence, containing spaces
          * @return the first sequence of characters
          */
         public static String getFirstWord (String spaceDelimitedString){
-            return ;
+            int index = spaceDelimitedString.indexOf(' ');
+            return spaceDelimitedString.substring(0, index).trim();
+
         }
 
         /**
@@ -81,7 +83,8 @@ public class StringUtilities {
          * @return the second word of a string delimited by spaces.
          */
         public static String getSecondWord (String spaceDelimitedString){
-            return null;
+                return spaceDelimitedString.substring(7, 18).trim();
+
         }
 
         /**
@@ -89,6 +92,8 @@ public class StringUtilities {
          * @return an identical string with characters in reverse order.
          */
         public static String reverse (String stringToReverse){
-            return null;
+                StringBuilder sb = new StringBuilder(stringToReverse);
+                String reversed = sb.reverse().toString();
+                return reversed;
         }
     }
