@@ -60,31 +60,35 @@ public class StringUtilities {
      * @param inputValue the value input from user
      * @return the middle character of `inputValue`
      */
-    public static Character getMiddleCharacter(String inputValue){
-        return null;
+    public static Character getMiddleCharacter(String inputValue) {
+        if(inputValue.length() % 2 == 0){
+         return inputValue.charAt(inputValue.length() / 2 - 1);}
+       else {
+            return inputValue.charAt(inputValue.length() / 2);
+       }
     }
+//return inputValue.charAt(inputValue.length() / 2 - 1 );
+        /**
+         * @param spaceDelimitedString a string, representative of a sentence, containing spaces
+         * @return the first sequence of characters
+         */
+        public static String getFirstWord (String spaceDelimitedString){
+            return ;
+        }
 
-    /**
-     * @param spaceDelimitedString a string, representative of a sentence, containing spaces
-     * @return the first sequence of characters
-     */
-    public static String getFirstWord(String spaceDelimitedString){
-        return null;
-    }
+        /**
+         * @param spaceDelimitedString a string delimited by spaces
+         * @return the second word of a string delimited by spaces.
+         */
+        public static String getSecondWord (String spaceDelimitedString){
+            return null;
+        }
 
-    /**
-     * @param spaceDelimitedString a string delimited by spaces
-     * @return the second word of a string delimited by spaces.
-     */
-    public static String getSecondWord(String spaceDelimitedString){
-        return null;
+        /**
+         * @param stringToReverse
+         * @return an identical string with characters in reverse order.
+         */
+        public static String reverse (String stringToReverse){
+            return null;
+        }
     }
-
-    /**
-     * @param stringToReverse
-     * @return an identical string with characters in reverse order.
-     */
-    public static String reverse(String stringToReverse){
-        return null;
-    }
-}
