@@ -1,5 +1,7 @@
 package com.zipcodewilmington.danny_do_better_exercises;
 
+import java.util.Objects;
+
 /**
  * Modified by kristofer 3/4/2024.
  */
@@ -42,7 +44,7 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input){
-        return null;
+        return input.substring(input.length()- 3);
     }
 
     /**
@@ -51,7 +53,7 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-        return null;
+        return Objects.equals(inputValue, comparableValue);
     }
 
     /**
